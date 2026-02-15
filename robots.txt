@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ghardaiaproduction.com/sitemap.xml
