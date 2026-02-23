@@ -2,37 +2,172 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">. 
-    <title>من نحن - فقاسات غرداية</title>
-    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&family=Noto+Sans+Arabic:wght@400&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عن الموقع | Ghardaia Production</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Noto Sans Arabic', sans-serif; line-height: 1.8; color: #333; background: #f9fafb; padding: 40px 20px; }
-        .container { max-width: 800px; margin: 0 auto; background: white; padding: 40px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); text-align: center; }
-        h1 { font-family: 'El Messiri', serif; color: #2e7d32; font-size: 2.5rem; }
-        .highlight { color: #c5a059; font-weight: bold; }
-        .vision { margin: 30px 0; padding: 20px; background: #e8f5e9; border-radius: 10px; }
-        .back-btn { display: inline-block; margin-top: 30px; color: #2e7d32; text-decoration: none; font-weight: bold; }
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        
+        :root {
+            --primary-green: #2e7d32;
+            --dark-green: #1b5e20;
+            --bg-gradient: linear-gradient(135deg, #f9fafb 0%, #e8f5e9 100%);
+            --text-dark: #1a3c1e;
+            --text-light: #4a5d4c;
+            --white: #ffffff;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Noto Sans Arabic', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-dark);
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        header {
+            height: 80px;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .brand {
+            font-family: 'El Messiri', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary-green);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background: var(--white);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        h1 {
+            font-family: 'El Messiri', serif;
+            color: var(--primary-green);
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+
+        .content-section {
+            margin-bottom: 30px;
+        }
+
+        .content-section h2 {
+            color: var(--dark-green);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-right: 4px solid var(--primary-green);
+            padding-right: 15px;
+        }
+
+        .content-section p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        .back-btn {
+            display: block;
+            width: fit-content;
+            margin: 40px auto 0;
+            padding: 12px 30px;
+            background: var(--primary-green);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .back-btn:hover {
+            background: var(--dark-green);
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { margin: 20px; padding: 25px; }
+            h1 { font-size: 1.8rem; }
+        }
     </style>
 </head>
 <body>
+
+    <header>
+        <a href="index.html" class="brand">إنتاج غرداية</a>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+        </nav>
+    </header>
+
     <div class="container">
         <h1>من نحن</h1>
-        <p class="highlight">غرداية للمنتوجات الفلاحية - الريادة في تكنولوجيا التفقيس</p>
         
-        <div class="vision">
-            <p>نحن مؤسسة جزائرية رائدة مقرها <span class="highlight">غرداية</span>، متخصصون في صناعة وتطوير فقاسات البيض الأوتوماتيكية بأحدث المعايير العالمية.</p>
+        <div class="content-section">
+            <h2>رؤيتنا</h2>
+            <p>نطمح في Ghardaia Production إلى أن نكون المنصة الأولى والموثوقة لتقديم المحتوى الرقمي الهادف الذي يجمع بين الأصالة والحداثة، مع التركيز على إبراز المبدعين والمواضيع التي تهم مجتمعنا.</p>
         </div>
 
-        <p>هدفنا هو توفير حلول تقنية متطورة للمربين لضمان أعلى نسب تفقيس ممكنة، من خلال منتجاتنا التي تتميز بدقة التحكم في الحرارة والرطوبة ونظام التهوية المبتكر.</p>
-        
-        <h2>لماذا تختارنا؟</h2>
-        <ul style="list-style: none; padding: 0;">
-            <li>✅ صناعة محلية بجودة عالمية</li>
-            <li>✅ ضمان حقيقي وقطع غيار متوفرة</li>
-            <li>✅ دعم فني للمربين والمبتدئين</li>
-        </ul>
+        <div class="content-section">
+            <h2>رسالتنا</h2>
+            <p>نعمل على إثراء المحتوى العربي الإلكتروني بمقالات ومواضيع ذات جودة عالية، مع الالتزام التام بمعايير المصداقية وحماية حقوق الملكية الفكرية، وتوفير بيئة تصفح آمنة وسلسة لمتابعينا.</p>
+        </div>
 
-        <a href="index.html" class="back-btn">← العودة للرئيسية</a>
+        <div class="content-section">
+            <h2>ماذا نقدم؟</h2>
+            <p>نقدم تشكيلة متنوعة من الخدمات الرقمية والمحتوى المتخصص الذي يشمل الدراسات، التقارير، والتحليلات التي تهم الباحثين عن المعرفة في مختلف المجالات.</p>
+        </div>
+
+        <a href="index.html" class="back-btn">العودة للرئيسية</a>
     </div>
+
+    <footer>
+        <p>© 2026 جميع الحقوق محفوظة لـ Ghardaia Production</p>
+    </footer>
+
 </body>
 </html>
