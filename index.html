@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فقاسة غرداية - أخبار وتوعية فلاحية</title>
+    <title>فقاسة غرداية - التميز الفلاحي</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { --primary: #2e7d32; --red: #d32f2f; --bg: #f8f9fa; }
         body { font-family: 'Cairo', sans-serif; background-color: var(--bg); margin: 0; padding: 0; }
         header { background: var(--primary); color: white; text-align: center; padding: 20px; }
-        header img { max-height: 80px; margin-bottom: 10px; }
-        .container { max-width: 1000px; margin: auto; padding: 20px; }
+        header img { max-height: 100px; margin-bottom: 10px; border-radius: 8px; }
+        .container { max-width: 1000px; margin: auto; padding: 15px; }
         .awareness-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 25px; border-right: 6px solid #ff9800; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .ad-box { background: #eee; text-align: center; padding: 10px; margin: 15px 0; font-size: 12px; color: #888; border: 1px dashed #bbb; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
-        .card img { width: 100%; height: 220px; object-fit: cover; }
-        .price { color: var(--red); font-size: 1.5rem; font-weight: bold; margin-bottom: 15px; }
-        .btn { display: block; background: #25d366; color: white; text-decoration: none; padding: 12px; margin: 0 15px 15px; border-radius: 8px; font-weight: bold; }
-        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        .ad-box { background: #eee; text-align: center; padding: 15px; margin: 15px 0; font-size: 12px; color: #888; border: 1px dashed #bbb; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card img { width: 100%; height: 250px; object-fit: cover; background: #f0f0f0; }
+        .price { color: var(--red); font-size: 1.6rem; font-weight: bold; margin-bottom: 15px; }
+        .btn { display: block; background: #25d366; color: white; text-decoration: none; padding: 12px; margin: 0 20px 20px; border-radius: 8px; font-weight: bold; font-size: 1.1rem; }
+        footer { background: #333; color: white; text-align: center; padding: 30px; margin-top: 40px; }
         footer a { color: #ddd; text-decoration: none; margin: 0 10px; font-size: 14px; }
     </style>
 </head>
@@ -34,44 +35,48 @@
 
     <section class="awareness-card">
         <h2>أخبار وتوعية فلاحية - الجزائر</h2>
-        <p style="color:var(--red); font-weight:bold; font-size:1.2rem;">"اختر أفضل استثمار لضمان نجاح مشروعك الفلاحي"</p>
-        <p>نرافقكم بتقديم آخر مستجدات قطاع الفلاحة، ونصائح تقنية للمربين، مع متابعة دقيقة لأسعار السوق الوطنية لدعم الفلاح في كل ربوع الوطن.</p>
+        <p style="color:var(--red); font-weight:bold; font-size:1.3rem;">"اختر أفضل استثمار لضمان نجاح مشروعك الفلاحي"</p>
+        <p>نرافقكم بتقديم آخر مستجدات قطاع الفلاحة، ونصائح تقنية للمربين لدعم الفلاح في كل ربوع الوطن.</p>
     </section>
 
-    <div class="ad-box">مساحة إعلانية (Google AdSense)</div>
-
-    <h2 style="text-align:center; color:var(--primary);">إصدارات فقاسة غرداية</h2>
+    <h2 style="text-align:center; color:var(--primary); margin-bottom:30px;">إصدارات فقاسة غرداية المعتمدة</h2>
+    
     <div class="products-grid">
         <div class="card">
-            <img src="fagasa-511.jpg" alt="511 بيضة">
+            <img src="fagasa-511.jpg" alt="سعة 511 بيضة">
             <h3>فقاسة غرداية (511 بيضة)</h3>
             <div class="price">75,000 دج</div>
-            <a href="https://wa.me/رقمك" class="btn">طلب عبر واتساب</a>
+            <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
         </div>
+
         <div class="card">
-            <img src="fagasa-219.jpg" alt="219 بيضة">
+            <img src="fagasa-219.jpg" alt="سعة 219 بيضة">
             <h3>فقاسة غرداية (219 بيضة)</h3>
             <div class="price">62,000 دج</div>
-            <a href="https://wa.me/رقمك" class="btn">طلب عبر واتساب</a>
+            <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
         </div>
+
         <div class="card">
-            <img src="fagasa-117.jpg" alt="117 بيضة">
+            <img src="fagasa-117.jpg" alt="سعة 117 بيضة">
             <h3>فقاسة غرداية (117 بيضة)</h3>
             <div class="price">50,000 دج</div>
-            <a href="https://wa.me/رقمك" class="btn">طلب عبر واتساب</a>
+            <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
         </div>
+
         <div class="card">
-            <img src="fagasa-78.jpg" alt="78 بيضة">
+            <img src="fagasa-78.jpg" alt="سعة 78 بيضة">
             <h3>فقاسة غرداية (78 بيضة)</h3>
             <div class="price">38,000 دج</div>
-            <a href="https://wa.me/رقمك" class="btn">طلب عبر واتساب</a>
+            <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
         </div>
     </div>
 </div>
 
 <footer>
     <p>&copy; 2026 فقاسة غرداية - كافة الحقوق محفوظة</p>
-    <a href="privacy.html">سياسة الخصوصية</a> | <a href="about.html">من نحن</a> | <a href="order.html">اطلب الآن</a>
+    <a href="privacy.html">سياسة الخصوصية</a> | 
+    <a href="article-1.html">نصائح فلاحية</a> | 
+    <a href="about.html">من نحن</a>
 </footer>
 
 </body>
