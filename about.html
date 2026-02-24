@@ -3,47 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن | إنتاج غرداية</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&family=Vazirmatn:wght@300;500&display=swap" rel="stylesheet">
+    <title>من نحن - فقاسة غرداية للمنتوجات الفلاحية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary-green: #2e7d32; --white: #ffffff; }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Vazirmatn', sans-serif; background: #fdfdfd; display: flex; flex-direction: column; min-height: 100vh; }
-        header { background: var(--white); display: flex; align-items: center; justify-content: space-between; padding: 10px 4%; box-shadow: 0 2px 15px rgba(0,0,0,0.08); }
-        .brand { display: flex; align-items: center; text-decoration: none; }
-        .brand img { height: 60px; width: auto; margin-left: 12px; }
-        .brand span { font-family: 'Cairo', sans-serif; font-size: 1.4rem; font-weight: 800; color: var(--primary-green); }
-        
-        .ads-space { background: #f0f0f0; border: 1px dashed #bbb; margin: 20px auto; text-align: center; padding: 10px; color: #888; font-size: 12px; max-width: 800px; border-radius: 8px; }
-        
-        .content { max-width: 850px; margin: 30px auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); flex: 1; }
-        h1 { color: var(--primary-green); font-family: 'Cairo', sans-serif; font-size: 2rem; margin-bottom: 25px; }
-        p { line-height: 1.9; color: #444; margin-bottom: 20px; font-size: 1.05rem; }
-        
-        footer { background: #111; color: #888; padding: 25px; text-align: center; font-size: 0.85rem; }
-        .whatsapp-btn { position: fixed; bottom: 20px; left: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 2000; text-decoration: none; }
+        :root { --primary: #2e7d32; --accent: #ffc107; --bg: #f8f9fa; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--bg); margin: 0; padding: 0; line-height: 1.8; }
+        header { background: var(--primary); color: white; text-align: center; padding: 40px 20px; }
+        .container { max-width: 900px; margin: 30px auto; padding: 25px; background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; }
+        .specs-highlight { background: #e8f5e9; padding: 20px; border-radius: 10px; margin: 20px 0; border-right: 5px solid var(--primary); }
+        .footer-nav { text-align: center; margin-top: 40px; padding: 20px; border-top: 1px solid #eee; }
+        .btn-back { color: var(--primary); text-decoration: none; font-weight: bold; }
     </style>
 </head>
 <body>
-    <header>
-        <a href="index.html" class="brand"><img src="logo.png" alt="شعار"><span>إنتاج غرداية</span></a>
-        <nav><a href="index.html" style="text-decoration:none; color:var(--primary-green); font-weight:800; font-family:'Cairo';">الرئيسية</a></nav>
-    </header>
 
-    <div class="ads-space">مساحة إعلانية (Google AdSense)</div>
+<header>
+    <h1>من نحن - فقاسة غرداية</h1>
+    <p>رواد صناعة الفقاسات الاحترافية في الجزائر</p>
+</header>
 
-    <div class="content">
-        <h1>عن مؤسستنا</h1>
-        <p>مؤسسة <strong>إنتاج غرداية</strong> رائدة في هندسة وصناعة الفقاسات الذكية التي تلبي تطلعات المربين في الجزائر.</p>
-        <p>نقدم حلولاً تقنية وإرشادات فلاحية لضمان نجاح مشاريع تفقيس الدواجن وتطوير الثروة الحيوانية.</p>
+<div class="container">
+    <section>
+        <h2>قصتنا ورسالتنا</h2>
+        <p>نحن في <strong>فقاسة غرداية</strong> نسعى لتطوير القطاع الفلاحي من خلال توفير معدات تفقيس عالية الجودة. نؤمن بأن النجاح في تربية الدواجن يبدأ من الفقاسة، ولذلك نحرص على تقديم تكنولوجيا دقيقة تضمن للفلاح الجزائري أعلى مردودية وأقل نسبة ضياع للأجنة.</p>
+    </section>
+
+    <section class="specs-highlight">
+        <h2>لماذا نتميز في فقاسة غرداية؟</h2>
+        <ul>
+            <li><strong>التكنولوجيا:</strong> نعتمد حصرياً على متحكمات <strong>XM-18</strong> الأصلية لضمان استقرار الحرارة والرطوبة.</li>
+            <li><strong>الجودة:</strong> هياكل فقاساتنا مصنعة من ألواح <strong>Paneux Sandwich</strong> المعزولة حرارياً لضمان كفاءة عالية في مختلف الظروف الجوية.</li>
+            <li><strong>الخبرة:</strong> نوفر أحجاماً متنوعة تبدأ من 78 بيضة وتصل إلى 511 بيضة لتناسب جميع مستويات الإنتاج.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>التزامنا تجاهكم</h2>
+        <p>لا يقتصر دورنا على البيع فقط، بل نرافق زبائننا عبر الدعم الفني وتقديم النصائح العلمية حول مراحل التفقيس لضمان نجاح استثماركم الفلاحي.</p>
+    </section>
+
+    <div class="footer-nav">
+        <a href="index.html" class="btn-back"> &larr; العودة إلى الصفحة الرئيسية</a>
     </div>
+</div>
 
-    <div class="ads-space">مساحة إعلانية - أسفل المحتوى</div>
-
-    <footer><p>© 2026 إنتاج غرداية - كافة الحقوق محفوظة.</p></footer>
-
-    <a href="https://wa.me/213000000000" class="whatsapp-btn" target="_blank">
-        <svg style="width:35px;height:35px" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.5 2 2 6.5 2 12.04C2 13.81 2.46 15.5 3.33 17L2.05 21.91L7.11 20.62C8.56 21.41 10.25 21.84 12.04 21.84C17.58 21.84 22.08 17.34 22.08 11.8C22.08 6.26 17.58 1.76 12.04 1.76M12.04 3.76C16.47 3.76 20.08 7.37 20.08 11.8C20.08 16.23 16.47 19.84 12.04 19.84C10.5 19.84 9.12 19.41 7.94 18.7L7.65 18.52L4.65 19.3L5.43 16.31L5.23 16C4.5 14.82 4 13.43 4 12C4 7.58 7.58 4 12 4" /></svg>
-    </a>
 </body>
 </html>
