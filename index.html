@@ -3,48 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فقاسة غرداية للمنتوجات الفلاحية</title>
+    <title>فقاسة غرداية - احترافية الإنتاج الفلاحي</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { --primary: #2e7d32; --red: #d32f2f; --bg: #f8f9fa; }
-        body { font-family: 'Cairo', sans-serif; background-color: var(--bg); margin: 0; padding: 0; }
-        header { background: var(--primary); color: white; text-align: center; padding: 25px 15px; }
-        header img { max-height: 120px; margin-bottom: 15px; border-radius: 10px; }
+        :root { --primary: #2e7d32; --secondary: #1b5e20; --accent: #ffc107; --red: #d32f2f; --bg: #f4f7f6; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--bg); margin: 0; padding: 0; color: #333; }
+        
+        /* الهيدر واللوقو */
+        header { background: var(--primary); color: white; text-align: center; padding: 30px 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        header img { max-height: 130px; margin-bottom: 10px; filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2)); }
+        
         .container { max-width: 1100px; margin: auto; padding: 15px; }
-        
-        /* قسم التوعية */
-        .awareness-card { background: white; border-radius: 12px; padding: 20px; margin-bottom: 30px; border-right: 6px solid #ff9800; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .ad-box { background: #fff; text-align: center; padding: 15px; margin: 15px 0; font-size: 14px; color: #888; border: 1px dashed #bbb; border-radius: 8px; }
 
-        /* تنسيق المنتجات وصورها الكاملة */
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
-        .product-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; }
+        /* البطاقة التعريفية */
+        .intro-card { background: white; border-radius: 15px; padding: 25px; margin-bottom: 30px; border-right: 8px solid var(--accent); box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .intro-card h2 { color: var(--primary); margin-top: 0; }
+
+        /* تنسيق المنتجات */
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .product-card { background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.1); transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
         
-        /* حاوية الصور: تدعم التمرير العرضي إذا وجدت صورتين */
-        .image-container { 
-            display: flex; 
-            overflow-x: auto; 
-            scroll-snap-type: x mandatory; 
-            background: #eee; 
-            height: 350px; 
-            align-items: center;
-        }
-        .image-container img { 
-            flex: 0 0 100%; 
-            width: 100%; 
-            height: 100%; 
-            object-fit: contain; /* تضمن ظهور الصورة كاملة */
-            scroll-snap-align: start;
-            background: #fff;
-        }
-        
-        .product-details { padding: 20px; }
+        .image-slider { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; background: #fff; height: 350px; }
+        .image-slider img { flex: 0 0 100%; width: 100%; height: 100%; object-fit: contain; scroll-snap-align: start; }
+
+        .product-details { padding: 20px; text-align: center; }
+        .badge { background: var(--primary); color: white; padding: 4px 12px; border-radius: 50px; font-size: 0.85rem; display: inline-block; margin-bottom: 10px; }
         .price { color: var(--red); font-size: 1.8rem; font-weight: bold; margin: 10px 0; }
-        .btn { display: block; background: #25d366; color: white; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; font-size: 1.2rem; transition: 0.3s; }
-        .btn:hover { background: #128c7e; }
         
-        footer { background: #333; color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
-        footer a { color: #25d366; text-decoration: none; margin: 0 10px; }
+        .specs-list { text-align: right; background: #fdfdfd; padding: 15px; border-radius: 10px; font-size: 0.9rem; margin: 15px 0; border: 1px solid #eee; }
+        .specs-list li { list-style: none; margin-bottom: 8px; color: #555; }
+        .specs-list li::before { content: "✅ "; margin-left: 5px; }
+
+        .btn { display: block; background: #25d366; color: white; text-decoration: none; padding: 15px; border-radius: 12px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(37,211,102,0.3); }
+
+        /* قسم المراجعات */
+        .reviews-section { margin-top: 50px; background: var(--secondary); color: white; padding: 40px 20px; border-radius: 20px; text-align: center; }
+        .review-box { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 15px; margin: 15px 0; font-style: italic; }
+
+        footer { background: #222; color: #ccc; text-align: center; padding: 40px 20px; margin-top: 60px; }
+        footer a { color: var(--accent); text-decoration: none; margin: 0 10px; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -52,78 +50,57 @@
 <header>
     <img src="logo.png" alt="لوقو فقاسة غرداية">
     <h1>فقاسة غرداية للمنتوجات الفلاحية</h1>
+    <p>الجودة، المتانة، وأعلى نسبة تفقيس في الجزائر</p>
 </header>
 
 <div class="container">
-    <div class="ad-box">مساحة إعلانية (Google AdSense)</div>
-
-    <section class="awareness-card">
-        <h2>أخبار وتوعية فلاحية - الجزائر</h2>
-        <p style="color:var(--red); font-weight:bold; font-size:1.4rem; margin-bottom:10px;">"اختر أفضل استثمار لضمان نجاح مشروعك الفلاحي"</p>
-        <p>نرافقكم بتقديم آخر مستجدات قطاع الفلاحة، ونصائح تقنية للمربين لدعم الفلاح في كل ربوع الوطن.</p>
+    <section class="intro-card">
+        <h2>💚 نخدمكم بتميز 💚</h2>
+        <p>نوفر لكم فقاسات بمواصفات عالمية، مصممة خصيصاً لتناسب المناخ الجزائري، مع هيكل <strong>Paneux Sandwich</strong> المتين ومتحكمات <strong>XM-18</strong> الأصلية.</p>
     </section>
 
-    <h2 style="text-align:center; color:var(--primary); margin-bottom:30px;">إصداراتنا المعتمدة</h2>
-    
     <div class="products-grid">
         <div class="product-card">
-            <div class="image-container">
-                <img src="fagasa-511.jpg" alt="فقاسة 511 بيضة">
-                <img src="fagasa-511-2.jpg" alt="صورة ثانية" onerror="this.style.display='none'">
+            <div class="image-slider">
+                <img src="fagasa-511.jpg" alt="فقاسة 511">
+                <img src="fagasa-511-2.jpg" alt="فقاسة 511 صورة 2" onerror="this.style.display='none'">
             </div>
             <div class="product-details">
-                <h3>فقاسة غرداية (511 بيضة)</h3>
+                <div class="badge">متحكم XM-18 الأصلي</div>
+                <h3>فقاسة احترافية (511 بيضة)</h3>
                 <div class="price">75,000 دج</div>
-                <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
+                <ul class="specs-list">
+                    <li>نظام تقليب أوتوماتيكي بالكامل</li>
+                    <li>إمكانية التفقيس بالدفعات</li>
+                    <li>طرد الحرارة الزائدة (متحكم موسمي)</li>
+                    <li>هيكل Paneux Sandwich مدعم بالألمنيوم</li>
+                </ul>
+                <a href="https://wa.me/213784117757" class="btn">اطلبها الآن عبر واتساب</a>
             </div>
         </div>
 
         <div class="product-card">
-            <div class="image-container">
-                <img src="fagasa-219.jpg" alt="فقاسة 219 بيضة">
-                <img src="fagasa-219-2.jpg" alt="صورة ثانية" onerror="this.style.display='none'">
+            <div class="image-slider">
+                <img src="fagasa-219.jpg" alt="فقاسة 219">
+                <img src="fagasa-219-2.jpg" alt="فقاسة 219 صورة 2" onerror="this.style.display='none'">
             </div>
             <div class="product-details">
-                <h3>فقاسة غرداية (219 بيضة)</h3>
+                <div class="badge">متحكم XM-18 الأصلي</div>
+                <h3>فقاسة متوسطة (219 بيضة)</h3>
                 <div class="price">62,000 دج</div>
-                <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
+                <ul class="specs-list">
+                    <li>تقليب أوتوماتيكي ومناخ متوازن</li>
+                    <li>عزل حراري ممتاز للجودة العالية</li>
+                    <li>مواصفات تقنية عالية الجودة</li>
+                    <li>هيكل متين Paneux Sandwich</li>
+                </ul>
+                <a href="https://wa.me/213784117757" class="btn">اطلبها الآن عبر واتساب</a>
             </div>
         </div>
-
-        <div class="product-card">
-            <div class="image-container">
-                <img src="fagasa-117.jpg" alt="فقاسة 117 بيضة">
-                <img src="fagasa-117-2.jpg" alt="صورة ثانية" onerror="this.style.display='none'">
-            </div>
-            <div class="product-details">
-                <h3>فقاسة غرداية (117 بيضة)</h3>
-                <div class="price">50,000 دج</div>
-                <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
-            </div>
+        
         </div>
 
-        <div class="product-card">
-            <div class="image-container">
-                <img src="fagasa-78.jpg" alt="فقاسة 78 بيضة">
-                <img src="fagasa-78-2.jpg" alt="صورة ثانية" onerror="this.style.display='none'">
-            </div>
-            <div class="product-details">
-                <h3>فقاسة غرداية (78 بيضة)</h3>
-                <div class="price">38,000 دج</div>
-                <a href="https://wa.me/213784117757" class="btn">طلب عبر واتساب</a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer>
-    <p>&copy; 2026 فقاسة غرداية - كافة الحقوق محفوظة</p>
-    <div style="margin-top:15px;">
-        <a href="privacy.html">سياسة الخصوصية</a> | 
-        <a href="article-1.html">مقال: موت الأجنة</a> | 
-        <a href="about.html">من نحن</a>
-    </div>
-</footer>
-
-</body>
-</html>
+    <section class="reviews-section">
+        <h2>ماذا يقول زبائننا؟ ⭐⭐⭐⭐⭐</h2>
+        <div class="review-box">"ما شاء الله، نسبة التفقيس وصلت عندي لـ 95%، والفقاسة متينة جداً. بارك الله فيكم." - (زبون من ولاية سطيف)</div>
+        <div class="review-box">"التعامل احترافي والت
